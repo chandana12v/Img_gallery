@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: relative;
+            width:50%;
+            max-width:300px;
+        }
+        .image{
+            display:block;
+            width:100%;
+            height:auto;
+        }
+        .overlay{
+            position:absolute;
+            bottom:0;
+            background:rgba(0,0,0);
+            background:rgba(0,0,0,0.5);
+            width:100%;
+            padding:20px 0;
+            color:#fff;
+            font-size:20px;
+            transition:0.5s;
+            opacity:0;
+            text-align:center;
+            color: #f1f1f1; 
+        }
+        .container:hover .overlay{
+            opacity:1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="image">
+        <div class="overlay">
+            My name is srichandana
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin:0;
+            font-family: sans-serif;
+        }
+        .container{
+            position:relative;
+            width:100%;
+        }
+        .image{
+            display:block;
+            width:100%;
+            height: auto;
+        }
+        .overlay{
+            position:absolute;
+            top:30px;
+            right:0;
+            background:#fff;
+            margin:20px;
+            max-width:300px;
+            padding:16px;
+        }
+       
+       input[type="email"],input[type="password"]{
+           width:100%;
+           padding:15px 1px;
+           margin:5px 0 22px 0;
+           border:none;
+           background:#f1f1f1;
+       }
+       input[type="email"]:focus,
+       input[type="password"]:focus{
+           background:#ddd;
+           outline:none;
+       }
+      h2{
+          font-size:30px;
+      }
+      label{
+          font-size:20px;
+          font-weight:bold;
+      }
+      .btn{
+          width:100%;
+          background:green;
+          color:#fff;
+          padding:15px 1px;
+          opacity:0.6;
+      }
+      .btn:hover{
+          opacity:1;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" alt="Snow" style="width:100%" class="image">
+        <div class="overlay">
+            <div class="form">
+                <h2>Login</h2>
+                <label>Email</label>
+                <input type="email" placeholder="Enter Email">
+                <label> Password</label>
+                <input type="password" placeholder="Enter Password">
+                <input type="button" value="Login" class="btn">
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
